@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  searxng:
+    image: searxng/searxng
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./searxng:/etc/searxng # Configuration
+  # Ollama is best run directly on your OS to use your GPU, 
+  # but SearXNG is perfect for Docker.
