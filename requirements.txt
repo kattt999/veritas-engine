@@ -3,3 +3,4 @@ uvicorn[standard]
 supabase
 crawl4ai
 langgraph
+crawl4ai

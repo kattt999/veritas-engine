@@ -4,7 +4,7 @@ from typing import TypedDict, List, Annotated
 import operator
 
 class AgentState(TypedDict):
-    content: str               # The raw article text
-    claims: Annotated[List[str], operator.add]  # List of claims found
-    evidence: List[dict]       # Search results found
-    final_report: str          # Final summary
+    content: str               # Raw article text
+    claims: List[str]          # Extracted factual statements
+    evidence: List[dict]       # Research found via SearXNG
+    final_report: str          # The final AI verdict
